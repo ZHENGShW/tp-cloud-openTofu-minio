@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "minio" {
-  minio_server   = "127.0.0.1:9000"
-  minio_user     = "minioadmin"
-  minio_password = "minioadmin"
+  minio_server   = var.minio_server
+  minio_user     = var.minio_user
+  minio_password = var.minio_password
   minio_ssl      = false
 }
 
